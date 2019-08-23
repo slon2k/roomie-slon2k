@@ -9,6 +9,7 @@ import GroupsPage from './pages/groups';
 import GroupPage from './pages/group';
 import LoginPage from './pages/login';
 import RegisterPage from './pages/register';
+import RegisterPageKate from './pages/register-kate';
 import ProfilePage from './pages/profile';
 // import './app.sass';
 
@@ -31,6 +32,7 @@ export default class App extends Component {
                         />
                         <Route exact path={'/login'} component={LoginPage}/>
                         <Route exact path={'/register'} component={RegisterPage}/>
+                        <Route exact path={'/reg'} component={RegisterPageKate}/>
                         <Route exact path={'/profile/:id'}
                                render = {({match}) =>
                                    <ProfilePage
